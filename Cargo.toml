@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-ntapi = {"version"="0.3.7", "features"=["beta"]}
-winapi = {"version"="0.3.9", "features"=[]}
-libaes = "0.6.1"
+#ntapi = {"version"="0.3.7", "features"=["beta"]}
+#libaes = "0.6.1"
+
+[profile.release]
+strip="symbols"
